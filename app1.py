@@ -20,7 +20,7 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 image = Image.open('selfie.jpg')
-st.image(image, caption='Mi selfie', use_column_width=True)
+st.image(image, caption='Mi selfie',use_container_width=True)
 # Mostrar la animación Lottie
 st_lottie(
     lottie_hello,
