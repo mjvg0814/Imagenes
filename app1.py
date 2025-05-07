@@ -17,16 +17,6 @@ st.markdown(
 image = Image.open('selfie.jpg')
 st.image(image, caption='Mi selfie',use_container_width=True)
 # Mostrar la animación Lottie
-st_lottie(
-    lottie_hello,
-    speed=1,
-    reverse=False,
-    loop=True,
-    quality="low", # medium ; high
-    height=None,
-    width=None,
-    key=None,
-)
 
 # Recuadro de la cámara
 img_file_buffer = st.camera_input("¡Tómate una foto!")
