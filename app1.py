@@ -18,8 +18,7 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_hello = load_lottiefile("sleep.json") # Reemplaza "tu_archivo_lottie.json" con la ruta de tu archivo
-
+image = Image.open('selfi.jpg')
 # Mostrar la animación Lottie
 st_lottie(
     lottie_hello,
