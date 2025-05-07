@@ -14,11 +14,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Cargar la animación Lottie desde un archivo JSON local
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
 image = Image.open('selfie.jpg')
 st.image(image, caption='Mi selfie',use_container_width=True)
 # Mostrar la animación Lottie
