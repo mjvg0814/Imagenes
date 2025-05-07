@@ -4,6 +4,7 @@ import json
 import cv2
 import numpy as np
 import pytesseract
+from PIL import Image
 
 
 st.markdown(
@@ -19,6 +20,7 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 image = Image.open('selfie.jpg')
+st.image(image, caption='Mi selfie', use_column_width=True)
 # Mostrar la animación Lottie
 st_lottie(
     lottie_hello,
